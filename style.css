@@ -1,14 +1,5 @@
-html{
-  width: 500px;
-}
-
-#choices {
-  display: flex;
-  flex-direction:column;
-}
-
 .choiceBtn {
-  width:200px;
+  display: block;
 }
 
 #genre, #level{

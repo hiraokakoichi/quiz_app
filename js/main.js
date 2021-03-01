@@ -56,7 +56,7 @@ function setQuiz() {
   // 見出し文挿入
   headline.textContent = `問題${currentNum+1}`;
   // 問題文挿入
-  guide.textContent = quizSet[currentNum].question;
+  guide.innerHTML = quizSet[currentNum].question;
   // ジャンル
   genre.textContent = '[ジャンル]'+quizSet[currentNum].category;
   // 難易度
@@ -73,7 +73,9 @@ function setQuiz() {
   choicesData.forEach(choice => {
   const btn = document.createElement('input');
   btn.type = 'button';
-  btn.value = choice;
+  //btn.value = choice;
+  btn.innerHTML = choice;
+  btn.value = btn.textContent;
   btn.classList.add('choiceBtn');
   btn.addEventListener('click', () => {
     checkAnswer(btn);
