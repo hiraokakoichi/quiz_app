@@ -1,0 +1,28 @@
+html{
+  width: 500px;
+}
+
+#choices {
+  display: flex;
+  flex-direction:column;
+}
+
+.choiceBtn {
+  width:200px;
+}
+
+#genre, #level{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#guide{
+  border-top: solid 1px #BBB;
+  border-bottom: solid 1px #BBB;
+}
+
+.non-display{
+  display: none;
+}
